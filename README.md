@@ -5,7 +5,7 @@ Change Preventer merupakan smell yang dapat menyebabkan gangguan saat ingin mela
 - [Shotgun Surgery]()
 - [Parallel Inheritance Hierarchies]()
 
-<br>  
+<br>      
 
 Dispensables merupakan smell yang berupa kode-kode yang tidak berguna dalam program.
 - [Comments]()
