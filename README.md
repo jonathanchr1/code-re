@@ -6,8 +6,9 @@ Change Preventer merupakan smell yang dapat menyebabkan gangguan saat ingin mela
 - [Parallel Inheritance Hierarchies]()
 
 Dispensables merupakan smell yang berupa kode-kode yang tidak berguna dalam program.
+- [Comments]()
 - [Data Class]()
-- [Duplicate Code]()
-- [Speculative Generality]()
 - [Dead Code]()
+- [Duplicate Code]()
 - [Lazy Class]()
+- [Speculative Generality]()
