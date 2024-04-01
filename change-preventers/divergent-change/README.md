@@ -1,3 +1,0 @@
-# Divergent Change
-
-content
