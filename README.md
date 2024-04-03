@@ -8,9 +8,9 @@ Change Preventers merupakan smell yang dapat menyebabkan gangguan saat ingin mel
 
 ## Dispensables
 Dispensables merupakan smell yang berupa kode-kode yang tidak berguna dalam program.
-- [Comments]()
-- [Data Class]()
-- [Dead Code]()
-- [Duplicate Code]()
-- [Lazy Class]()
-- [Speculative Generality]()
+- [Comments](comments/Comments.md)
+- [Data Class](data-class/DataClss.md)
+- [Dead Code](dead-code/DeadCode.md)
+- [Duplicate Code](duplicate-code/DupeCode.md)
+- [Lazy Class](lazy-class/LazyClss.md)
+- [Speculative Generality](speculative-generality/SpeculativeGen.md)
