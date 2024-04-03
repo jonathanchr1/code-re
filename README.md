@@ -4,7 +4,7 @@
 Change Preventers merupakan smell yang dapat menyebabkan gangguan saat ingin melakukan perubahan atau pengembangan kode dalam program.
 - [Divergent Change](divergent-change/DivChange.md)
 - [Shotgun Surgery](shotgun-surgery/ShotgunSurg.md)
-- [Parallel Inheritance Hierarchies]()
+- [Parallel Inheritance Hierarchies](parallel-inheritance/ParallelInh.md)
 
 ## Dispensables
 Dispensables merupakan smell yang berupa kode-kode yang tidak berguna dalam program.
