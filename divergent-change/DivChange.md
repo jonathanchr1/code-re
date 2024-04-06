@@ -10,40 +10,40 @@ Berikut adalah contoh dari `Divergent Change` :
 
 ```java
 public class product {
-    private String name;
-    private double price;
-    private int stock;
+  private String name;
+  private double price;
+  private int stock;
     
-    public product(String name, double price, int stock) {
-		super();
-		this.name = name;
-		this.price = price;
-		this.stock = stock;
-	}
+  public product(String name, double price, int stock) {
+    super();
+    this.name = name;
+    this.price = price;
+    this.stock = stock;
+  }
 
-	public String getName() {
-		return name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	public double getPrice() {
-		return price;
-	}
+  public double getPrice() {
+    return price;
+  }
 
-	public void setPrice(double price) {
-		this.price = price;
-	}
+  public void setPrice(double price) {
+    this.price = price;
+  }
 
-	public int getStock() {
-		return stock;
-	}
+  public int getStock() {
+    return stock;
+  }
 
-	public void setStock(int stock) {
-		this.stock = stock;
-	}
+  public void setStock(int stock) {
+    this.stock = stock;
+  }
 
   public void restock(int quantity) {
     // Logika untuk menambah stok produk
@@ -81,44 +81,39 @@ Berikut adalah hasil refactor dari kelas `product` :
 ```java
 // Kelas 'product'
 public class product {
-    private String name;
-    private double price;
-    private int stock;
+  private String name;
+  private double price;
+  private int stock;
     
-    public product(String name, double price, int stock) {
-		super();
-		this.name = name;
-		this.price = price;
-		this.stock = stock;
-	}
+  public product(String name, double price, int stock) {
+    super();
+    this.name = name;
+    this.price = price;
+    this.stock = stock;
+  }
 
-	public String getName() {
-		return name;
-	}
+  public String getName() {
+    return name;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  public void setName(String name) {
+    this.name = name;
+  }
 
-	public double getPrice() {
-		return price;
-	}
+  public double getPrice() {
+    return price;
+  }
 
-	public void setPrice(double price) {
-		this.price = price;
-	}
+  public void setPrice(double price) {
+    this.price = price;
+  }
 
-	public int getStock() {
-		return stock;
-	}
+  public int getStock() {
+    return stock;
+  }
 
-	public void setStock(int stock) {
-		this.stock = stock;
-	}
-
-  public void restock(int quantity) {
-    // Logika untuk menambah stok produk
-    this.stock += quantity;
+  public void setStock(int stock) {
+    this.stock = stock;
   }
     
   public void productDetails() {
