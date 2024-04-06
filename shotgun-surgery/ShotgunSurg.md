@@ -4,6 +4,8 @@
 
 ### Contoh
 
+Berikut adalah contoh dari `Shotgun Surgery` :
+
 ```java
 code
 ```
