@@ -20,3 +20,5 @@ void foo() {
 Penjelasan code
 
 ### Penyelesaian
+
+[Back to Home Page](https://jonathanchr1.github.io/code-re/)
