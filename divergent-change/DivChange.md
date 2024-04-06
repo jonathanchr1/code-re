@@ -20,5 +20,3 @@ void foo() {
 Penjelasan code
 
 ### Penyelesaian
-
-[Kembali ke halaman utama](code-re/README.md)
