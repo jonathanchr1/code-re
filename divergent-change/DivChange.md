@@ -1,8 +1,8 @@
 # Divergent Change
 
-'Divergent Change' merupakan code smell yang terjadi ketika satu kelas sering dimodifikasi untuk alasan tertentu.
+`Divergent Change` merupakan code smell yang terjadi ketika satu kelas sering dimodifikasi untuk alasan tertentu.
 
-'Divergent Change' merupakan kebalikan dari 'Shotgun Surgery'.
+`Divergent Change` merupakan kebalikan dari 'Shotgun Surgery'.
 
 Berikut adalah contoh dari Divergent Change :
 
