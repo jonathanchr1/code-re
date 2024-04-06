@@ -16,6 +16,8 @@ Penjelasan
 
 Penjelasan
 
+Berikut adalah hasil refactor
+
 ```java
 code
 ```
