@@ -9,6 +9,8 @@ Change Preventers merupakan smell yang dapat menyebabkan gangguan saat ingin mel
 - [Parallel Inheritance Hierarchies](parallel-inheritance/ParallelInh.md)
 
 ## Dispensables
+![dispensables](https://github.com/jonathanchr1/code-re/assets/113973058/0566fad6-03b4-4575-9025-49f98660e5ee)
+
 Dispensables merupakan smell yang berupa kode-kode yang tidak berguna dalam program.
 - [Comments](comments/Comments.md)
 - [Data Class](data-class/DataClss.md)
