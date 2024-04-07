@@ -7,30 +7,79 @@
 Berikut adalah contoh dari `Parallel Inheritance Hierarchies` :
 
 ```java
-public interface AreaInterface {
-	public float area();
+package com.example.codesmell.parallelinheritence;
+public interface Engineer {
+    int getSalary();
+    void setSalary(int salary);
+    MileStone getMileStone();
+    void setMileStone(MileStone mileStone);
 }
 ```
 ```java
-public abstract class Shape2D {
-	protected float width;
-	protected float height;
-
-	public float getWidth() {
-		return width;
-	}
-
-	public void setWidth(float width) {
-		this.width = width;
-	}
-
-	public float getHeight() {
-		return height;
-	}
-
-	public void setHeight(float height) {
-		this.height = height;
-	}
+package com.example.codesmell.parallelinheritence;
+public interface MileStone {
+    public String target();
+}
+```
+```java
+package com.example.codesmell.parallelinheritence;
+public class ComputerEngineer implements Engineer {
+    private int salary;
+    private MileStone mileStone;
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+    public void setMileStone(MileStone mileStone) {
+        this.mileStone = mileStone;
+    }
+    @Override
+    public String toString() {
+        return "ComputerEngineer [salary=" + salary + ", mileStone=" + mileStone + "]";
+    }
+}
+```
+```java
+package com.example.codesmell.parallelinheritence;
+public class ComputerMileStone implements MileStone {
+    @Override
+    public String target() {
+        return"Build a Billing MicroService";
+    }
+    @Override
+    public String toString() {
+        return "ComputerMileStone [target()=" + target()"]";
+    }
+}
+```
+```java
+package com.example.codesmell.parallelinheritence;
+public class CivilEngineer implements Engineer {
+    private int salary;
+    private MileStone mileStone;
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+    public void setMileStone(MileStone mileStone) {
+        this.mileStone = mileStone;
+    }
+    @Override
+    public String toString() {
+        return "CivilEngineer [salary=" + salary + ", mileStone=" + mileStone + "]";
+    }
+}
+```
+```java
+package com.example.codesmell.parallelinheritence;
+public class CivilMileStone implements MileStone {
+    @Override
+    public String target() {
+        // TODO Auto-generated method stub
+        return "Create  Twin Towers";
+    }
+    @Override
+    public String toString() {
+        return "CivilMileStone [target()=" + target()"]";
+    }
 }
 ```
 
@@ -43,30 +92,54 @@ Penjelasan
 Berikut adalah hasil refactor
 
 ```java
-public interface AreaInterface {
-	public float area();
+public interface EngineerMileStone {
+    int getSalary();
+    void setSalary(int salary);
+    public String target();
 }
 ```
 ```java
-public abstract class Shape2D implements AreaInterface {
-	protected float width;
-	protected float height;
-
-	public float getWidth() {
-		return width;
-	}
-
-	public void setWidth(float width) {
-		this.width = width;
-	}
-
-	public float getHeight() {
-		return height;
-	}
-
-	public void setHeight(float height) {
-		this.height = height;
-	}
+package com.example.codesmell.parallelinheritence;
+public class RefactorComputerEngineer implements EngineerMileStone {
+    private int salary; 
+    @Override
+    public int getSalary() {
+        return salary;
+    }
+    @Override
+    public void setSalary(int salary) {
+        this.salary=salary;
+    }
+    @Override
+    public String target() {
+        return"Build a Billing MicroService";
+    }
+    @Override
+    public String toString() {
+        return "RefactorComputerEngineer [salary=" + salary + ", target()=" + target() + "]";
+    }
+}
+```
+```java
+package com.example.codesmell.parallelinheritence;
+public class ReFactorCivilEngineer implements EngineerMileStone {
+    private int salary; 
+    @Override
+    public int getSalary() {
+        return salary;
+    }
+    @Override
+    public void setSalary(int salary) {
+        this.salary=salary;
+    }
+    @Override
+    public String target() {
+        return "Create  Twin Towers";
+    }
+    @Override
+    public String toString() {
+        return "ReFactorCivilEngineer [salary=" + salary + ", target()=" + target() + "]";
+    }
 }
 ```
 
