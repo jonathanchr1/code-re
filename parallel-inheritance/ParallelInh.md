@@ -7,7 +7,31 @@
 Berikut adalah contoh dari `Parallel Inheritance Hierarchies` :
 
 ```java
-code
+public interface AreaInterface {
+	public float area();
+}
+```
+```java
+public abstract class Shape2D {
+	protected float width;
+	protected float height;
+
+	public float getWidth() {
+		return width;
+	}
+
+	public void setWidth(float width) {
+		this.width = width;
+	}
+
+	public float getHeight() {
+		return height;
+	}
+
+	public void setHeight(float height) {
+		this.height = height;
+	}
+}
 ```
 
 Penjelasan
@@ -19,7 +43,31 @@ Penjelasan
 Berikut adalah hasil refactor
 
 ```java
-code
+public interface AreaInterface {
+	public float area();
+}
+```
+```java
+public abstract class Shape2D implements AreaInterface {
+	protected float width;
+	protected float height;
+
+	public float getWidth() {
+		return width;
+	}
+
+	public void setWidth(float width) {
+		this.width = width;
+	}
+
+	public float getHeight() {
+		return height;
+	}
+
+	public void setHeight(float height) {
+		this.height = height;
+	}
+}
 ```
 
 [Back to Home Page](https://jonathanchr1.github.io/code-re/)
