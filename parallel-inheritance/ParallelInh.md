@@ -83,11 +83,11 @@ public class CivilMileStone implements MileStone {
 }
 ```
 
-Penjelasan
+Pada contoh code ini, sebuah company memiliki dua macam pekerja engineer -- civil dan computer engineer. Kedua objek tersebut memiliki atribut serta method yang sama. Andaikan mereka ingin menambahkan data baru, contohnya seperti departemen, maka harus dilakukan pengembangan class dan method baru kemudian atribut di dalamnya harus masing-masing diwariskan pada computer dan civil engineer.
 
 ### Perbaikan
 
-Penjelasan
+Perbaikan dilakukan dengan `Move Method` kepada `MileStone`, yang digabungkan dengan `Engineer` menjadi interface yang sama. Karena pada sebelumnya, bagian-bagian tersebut memiliki code yang mirip. Dengan itu, untuk menghindari terjadinya paralel inheritance terjadinya deduplicate.
 
 Berikut adalah hasil refactor
 
