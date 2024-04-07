@@ -2,6 +2,7 @@
 
 ## Change Preventers
 ![change-preventers](https://github.com/jonathanchr1/code-re/assets/113973058/049b3354-e9e9-4fc4-8edf-738927ab7b4c)
+
 Change Preventers merupakan smell yang dapat menyebabkan gangguan saat ingin melakukan perubahan atau pengembangan kode dalam program.
 - [Divergent Change](divergent-change/DivChange.md)
 - [Shotgun Surgery](shotgun-surgery/ShotgunSurg.md)
