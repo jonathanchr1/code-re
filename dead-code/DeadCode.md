@@ -7,19 +7,31 @@
 Berikut adalah contoh dari `Dead Code` :
 
 ```java
-code
+public class Greetings{
+  public String Greet(String name){
+    if(true){
+      return "Hello " + name + " !";
+    }else{
+      return "error";
+    }
+  }
+}
 ```
 
-Penjelasan
+Pada code diatas, dibuat sebuah program yang akan menyapa user ketika mereka run softwarenya. Namun pada snippet code tersebut terdapat line yang tidak terpakai, yaitu bagian `return "error"`. Hal ini karena state akan selalu `true`, dengan itu program pasti akan return sapaan pada user.
 
 ### Perbaikan
 
-Penjelasan
+Dengan dihapusnya line ... zzz
 
 Berikut adalah hasil refactor
 
 ```java
-code
+public class Greetings{
+  public String Greet(String name){
+    return "Hello " + name + " !";
+  }
+}
 ```
 
 [Back to Home Page](https://jonathanchr1.github.io/code-re/)
