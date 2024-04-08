@@ -22,7 +22,7 @@ Pada code diatas, dibuat sebuah program yang akan menyapa user ketika mereka run
 
 ### Perbaikan
 
-Dengan dihapusnya line ... zzz
+Untuk memperbaiki code smell yang satu ini sangatlah mudah. Salah satu jalan keluarnya adalah dengan menghapus line of code yang tidak terpakai. Oleh karena itu, bagian `return "error"` dihapus dan class method ini hanya digunakan menyapa user.
 
 Berikut adalah hasil refactor
 
