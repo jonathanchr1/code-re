@@ -10,11 +10,11 @@ Berikut adalah contoh dari `Data Class` :
 package fowler.dispensables.data_class.before;
 public class UserBank {
 	private String name;
-  private int money;
+  	private int money;
 	public FullName(String name, int money) {
 		super();
 		this.name = name;
-    this.money = money;
+    		this.money = money;
 	}
 	public String getName() {
 		return name;
@@ -22,12 +22,12 @@ public class UserBank {
 	public void setName(String name) {
 		this.name = name;
 	}
-  public int getMoney(){
-    return money;
-  }
-  public void setMoney(int money){
-    this.money = money;
-  }
+  	public int getMoney(){
+    		return money;
+  	}
+  	public void setMoney(int money){
+    		this.money = money;
+  	}
 }
 ```
 
@@ -43,21 +43,21 @@ Berikut adalah hasil refactor
 package fowler.dispensables.data_class.before;
 public class UserBank {
 	private String name;
-  private int money;
+  	private int money;
 	public FullName(String name, int money) {
 		super();
 		this.name = name;
-    this.money = money;
+    		this.money = money;
 	}
 	public void moneyDeposit(int ammount) {
 		//code...
 	}
-  public void moneyWithdrawal(int ammount) {
+  	public void moneyWithdrawal(int ammount) {
 		//code...
 	}
-  public int getMoney(){
-    return money;
-  }
+  	public int getMoney(){
+   	 	return money;
+  	}
 }
 
 ```
