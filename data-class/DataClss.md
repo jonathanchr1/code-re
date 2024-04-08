@@ -7,12 +7,10 @@
 Berikut adalah contoh dari `Data Class` :
 
 ```java
-package fowler.dispensables.data_class.before;
 public class UserBank {
 	private String name;
   	private int money;
-	public FullName(String name, int money) {
-		super();
+	public UserBank(String name, int money) {
 		this.name = name;
     		this.money = money;
 	}
@@ -30,17 +28,31 @@ public class UserBank {
   	}
 }
 ```
+```java
+public class UserTransaction extends UserBAnk{
+	private int ammount;
+	public UserTransaction(String name, int money, int ammount){
+		super(name, money);
+		this.ammount = ammount;
+	}
+	public void moneyDeposit() {
+		//code...
+	}
+  	public void moneyWithdrawal() {
+		//code...
+	}
+}
+```
 
-Penjelasan
+Pada contoh diatas, class `UserBank` merupakan smell data class karena hanya berisi setter getter untuk field `name` dan `money`. 
 
 ### Perbaikan
 
-Penjelasan
+Untuk mengeliminasi code smell-nya, class `UserBank` dapat digabungkan dengan class `UserTransaction`. Dengan ini, class tersebut memiliki fungsional lainnya.
 
 Berikut adalah hasil refactor
 
 ```java
-package fowler.dispensables.data_class.before;
 public class UserBank {
 	private String name;
   	private int money;
