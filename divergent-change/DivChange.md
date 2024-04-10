@@ -76,7 +76,7 @@ Dalam konteks code tersebut, jika kita ingin melakukan perubahan terkait cara su
 
 Untuk menghilangkan `Divergent Change` pada code tersebut, kita perlu melakukan `Extract Class` dengan memindahkan method `restock` dan `sell` ke dalam kelas terpisah, `productManager`. Perubahan ini dapat memperjelas tugas dari masing-masing kelas dimana `product` memiliki tugas untuk menampilkan informasi suatu produk dan `productManager` memiliki tugas untuk mengelola jumlah stok dan proses penjualan produk. Hal ini juga dapat mempermudah proses modifikasi dari logika manajemen stok pada kelas `productManager` jika perlu diubah di masa depan, tanpa mempengaruhi kelas `product`.
 
-Berikut adalah hasil refactor dari kelas `product` :
+Berikut adalah hasil refactoring dari kelas `product` :
 
 ```java
 // Kelas 'product'
