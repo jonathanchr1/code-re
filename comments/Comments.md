@@ -30,7 +30,7 @@ Pada code tersebut, kita dapat melihat bahwa method `kalkulasiUkuranLapangan` ke
 
 Untuk memperbaiki code tersebut, kita perlu melakukan `Extract Method` pada beberapa bagian dari method `kalkulasiUkuranLapangan` menjadi method-method baru dan memberikannya nama yang bersifat `self-explain` atau mampu menjelaskan proses atau logika yang dijalankan dalam method-method tersebut.
 
-Berikut adalah hasil refactor dari kelas `kalkulasiUkuran` :
+Berikut adalah hasil refactoring dari kelas `kalkulasiUkuran` :
 
 ```java
 public class kalkulasiUkuran {
