@@ -8,19 +8,19 @@ Berikut adalah contoh dari `Comments` :
 
 ```java
 public class kalkulasiUkuran {
-  public void kalkulasiUkuranLapangan() {
-    // Ukuran lapangan
-    int panjangLapangan = 105;
-    int lebarLapangan = 68;
+	public void kalkulasiUkuranLapangan() {
+    		// Ukuran lapangan
+		int panjangLapangan = 105;
+    		int lebarLapangan = 68;
 		
-    // Logika untuk hitung luas lapangan
-    int luas = panjangLapangan * lebarLapangan;
-    System.out.println(luas);
+    		// Logika untuk hitung luas lapangan
+    		int luas = panjangLapangan * lebarLapangan;
+    		System.out.println(luas);
 		
-    // Logika untuk hitung keliling lapangan
-    int keliling = (panjangLapangan + lebarLapangan) * 2;
-    System.out.println(keliling);
-  }
+    		// Logika untuk hitung keliling lapangan
+    		int keliling = (panjangLapangan + lebarLapangan) * 2;
+    		System.out.println(keliling);
+  	}
 }
 ```
 
@@ -34,23 +34,23 @@ Berikut adalah hasil refactor dari kelas `kalkulasiUkuran` :
 
 ```java
 public class kalkulasiUkuran {
-  public void kalkulasiUkuranLapangan() {
-    int panjangLapangan = 105;
-    int lebarLapangan = 68;
+	public void kalkulasiUkuranLapangan() {
+		int panjangLapangan = 105;
+		int lebarLapangan = 68;
 		
-    hitungLuasLapangan(panjangLapangan, lebarLapangan);
-    hitungKelilingLapangan(panjangLapangan, lebarLapangan);
-  }
+		hitungLuasLapangan(panjangLapangan, lebarLapangan);
+		hitungKelilingLapangan(panjangLapangan, lebarLapangan);
+	}
 
-  public void hitungLuasLapangan(int panjang, int lebar) {
-    int luas = panjang * lebar;
-    System.out.println(luas);
-  }
+  	public void hitungLuasLapangan(int panjang, int lebar) {
+    		int luas = panjang * lebar;
+    		System.out.println(luas);
+  	}
 
-  public void hitungKelilingLapangan(int panjang, int lebar) {
-    int keliling = (panjang + lebar) * 2;
-    System.out.println(keliling);
-  }
+  	public void hitungKelilingLapangan(int panjang, int lebar) {
+    		int keliling = (panjang + lebar) * 2;
+    		System.out.println(keliling);
+  	}
 }
 ```
 
