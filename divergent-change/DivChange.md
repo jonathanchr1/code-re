@@ -127,20 +127,20 @@ public class product {
 ```java
 // Kelas 'productManager'
 public class productManager {
-    public void restock(product product, int quantity) {
-        product.setStock(product.getStock() + quantity);
-        System.out.println(quantity + " " + product.getName() + " telah ditambahkan ke dalam stok.");
-    }
+  public void restock(product product, int quantity) {
+    product.setStock(product.getStock() + quantity);
+    System.out.println(quantity + " " + product.getName() + " telah ditambahkan ke dalam stok.");
+  }
 
-    public void sell(product product, int quantity) {
-        // Logika untuk menjual produk
-        if (quantity <= product.getStock()) {
-            product.setStock(product.getStock() - quantity);
-            System.out.println(quantity + " " + product.getName() + " telah terjual.");
-        } else {
-            System.out.println("Stok tidak mencukupi untuk " + quantity + " " + product.getName());
-        }
+  public void sell(product product, int quantity) {
+    // Logika untuk menjual produk
+    if (quantity <= product.getStock()) {
+      product.setStock(product.getStock() - quantity);
+      System.out.println(quantity + " " + product.getName() + " telah terjual.");
+    } else {
+      System.out.println("Stok tidak mencukupi untuk " + quantity + " " + product.getName());
     }
+  }
 }
 ```
 
