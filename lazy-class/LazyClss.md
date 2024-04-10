@@ -7,6 +7,7 @@
 Berikut adalah contoh dari `Lazy Class` :
 
 ```java
+// Kelas 'Employee'
 public class Employee {
   private String name;
 	private int age;
@@ -44,6 +45,7 @@ public class Employee {
 }
 ```
 ```java
+// Kelas 'Information'
 public class Information {
 	public static void displayInfo(Employee employee) {
 		System.out.println("Name : " + employee.getName());
