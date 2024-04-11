@@ -6,7 +6,7 @@
 
 ### Contoh
 
-Berikut adalah contoh dari `Duplicate Code` :
+Berikut adalah contoh dari `Duplicate Code`:
 
 ```java
 public class printBehavior {
