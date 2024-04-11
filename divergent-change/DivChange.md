@@ -1,5 +1,7 @@
 # Divergent Change
 
+![divergent-change-01](https://github.com/jonathanchr1/code-re/assets/113973058/8aeb7e59-15bc-43ba-be0e-54c5305f344a)
+
 `Divergent Change` merupakan code smell yang terjadi ketika setiap kali kita ingin melakukan perubahan pada suatu kelas, kita juga perlu melakukan perubahan pada banyak bagian dari code/method yang tidak terkait dengan perubahan yang dilakukan. Code smell ini melanggar prinsip `Single Responsibility Principle`. 
 
 `Divergent Change` merupakan kebalikan dari `Shotgun Surgery`.
