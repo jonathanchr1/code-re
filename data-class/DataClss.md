@@ -6,7 +6,7 @@
 
 ### Contoh
 
-Berikut adalah contoh dari `Data Class` :
+Berikut adalah contoh dari `Data Class`:
 
 ```java
 public class UserBank {
