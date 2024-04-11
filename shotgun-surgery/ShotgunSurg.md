@@ -1,5 +1,7 @@
 # Shotgun Surgery
 
+![shotgun-surgery-01](https://github.com/jonathanchr1/code-re/assets/113973058/cc228ee1-18c3-4fea-8fe1-9a52bad4fbb0)
+
 `Shotgun Surgery` merupakan code smell yang terjadi dimana perubahan yang dilakukan pada satu bagian kecil dari code memerlukan perubahan yang tersebar luas di berbagai bagian lainnya dari. Dengan kata lain, code smell ini terjadi ketika kita ingin menubah atau menambahkan suatu fitur ke dalam code, maka kita perlu mengganti bagian code lain yang tersebar di banyak class lain. Hal ini dapat diibaratkan seperti menembak peluru dengan senapan shotgun, di mana perubahan yang dilakukan bisa menyebar secara luas.
 
 ### Contoh
