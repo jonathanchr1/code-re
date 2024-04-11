@@ -6,7 +6,7 @@
 
 ### Contoh
 
-Berikut adalah contoh dari `Shotgun Surgery` :
+Berikut adalah contoh dari `Shotgun Surgery`:
 
 ```java
 public class Account {
