@@ -1,5 +1,7 @@
 # Duplicate Code
 
+![duplicate-code-01](https://github.com/jonathanchr1/code-re/assets/113973058/9f51001e-09d6-42bb-b4cc-9a7e11de7595)
+
 `Duplicate Code` merupakan code smell yang terjadi dimana ada dua atau lebih bagian dari code yang terlihat identik atau mirip. Hal ini bisa terjadi karena adanya pengulangan kode (copy-paste) atau karena adanya beberapa bagian dari kode yang melakukan fungsi yang serupa secara konseptual tetapi memiliki detail yang sedikit berbeda.
 
 ### Contoh
