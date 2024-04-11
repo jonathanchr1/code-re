@@ -6,7 +6,7 @@
 
 ### Contoh
 
-Berikut adalah contoh dari `Dead Code` :
+Berikut adalah contoh dari `Dead Code`:
 
 ```java
 public class Greetings{
