@@ -22,7 +22,7 @@ public class Account {
               amount = amount-debit;
               System.out.println("Now amount is" + amount);
        }
-       public void transfer(Account to,int cerditAmount) throws Exception{
+       public void transfer(Account to, int cerditAmount) throws Exception{
               if(from.amount <= 500){
                      throw new Exception("Money Transfer Failed");
               }
@@ -31,11 +31,11 @@ public class Account {
 }
 ```
 
-Penjelasan
+Dapat snippet code ini, bagian yang dapat menyebabkan terjadinya smell shotgun surgery adalah bagian valiadasi balanace akun yang harus lebih dari 500. Anadaikan developer ingin bertujuan untuk merubah minimal user balance, maka harus dicari setiap instance dari code tersebut dan harus dimodifikasi secara satu-per-satu juga.
 
 ### Perbaikan
 
-Penjelasan
+Untuk memperbaiki snippet code sebelumnya, dapat melakukan `extract method` pada bagian validasi `ammount`. Dibuatlah method sendiri untuk pengecekan `ammount`. Karena telah dikumpulkan code duplikat, sekarang kita hanya melakukan perubahan pada `isAccountUnder()` jika ada sesuatu yang perlu diubah mengenai perhitungan saldo minimum.
 
 Berikut adalah hasil refactor
 
@@ -48,18 +48,18 @@ public class AcountRefactored {
               this.amount=amount;
               this.type=type;
        }
-       private boolean isAccountUnderflow(){
+       private boolean isAccountUnder(){
              return amount<=500;
        }
        public void debit(int debit) throws Exception{
-              if(isAccountUnderflow()) {
+              if(isAccountUnder()) {
                      throw new Exception("Transaction Failed");
               }
               amount = amount-debit;
               System.out.println("Now amount is" + amount);
        }
-       public void transfer(AcountRefactored from,AcountRefactored to,int cerditAmount) throws Exception{
-              if(isAccountUnderflow()){
+       public void transfer(AcountRefactored to, int cerditAmount) throws Exception{
+              if(isAccountUnder()){
                      throw new Exception("Money Transfer Failed");
               }
               to.amount = amount+cerditAmount;
