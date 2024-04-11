@@ -1,5 +1,7 @@
 # Speculative Generality
 
+![speculative-generality-01](https://github.com/jonathanchr1/code-re/assets/113973058/9fd6d98a-baa5-4a2a-8f61-b2ce46642f81)
+
 `Speculative Generality` merupakan code smell yang mengacu pada kecenderungan untuk membuat class, method, field, atau parameter yang tidak digunakan atau tidak diperlukan, dengan anggapan bahwa mereka mungkin akan digunakan di masa depan. Hal ini dapat memunculkan kompleksitas yang tidak perlu dalam code dan dapat menyulitkan pemahaman serta pemeliharaan code.
 
 ### Contoh
