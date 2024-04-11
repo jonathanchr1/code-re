@@ -6,7 +6,7 @@
 
 ### Contoh
 
-Berikut adalah contoh dari `Parallel Inheritance Hierarchies` :
+Berikut adalah contoh dari `Parallel Inheritance Hierarchies`:
 
 ```java
 package com.example.codesmell.parallelinheritence;
