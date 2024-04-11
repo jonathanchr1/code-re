@@ -1,5 +1,7 @@
 # Lazy Class
 
+![lazy-class-01](https://github.com/jonathanchr1/code-re/assets/113973058/c2c67be8-8020-4e98-ac03-95d495708141)
+
 `Lazy Class` merupakan code smell yang terjadi dimana suatu kelas hanya memiliki sedikit fungsi, sekurang-kurangnya hanya satu fungsi. Kelas ini mungkin hanya berfungsi sebagai wadah untuk beberapa method kecil atau variabel yang tidak terlalu relevan. Dalam kasus tertentu, kelas semacam ini tidak memberikan nilai tambah yang signifikan kepada program dan cenderung membingungkan daripada membantu dalam memahami logika program.
 
 ### Contoh
