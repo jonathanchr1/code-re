@@ -1,5 +1,7 @@
 # Comments
 
+![comments-01](https://github.com/jonathanchr1/code-re/assets/113973058/85b90dc4-52ca-4314-839b-94ea05d99471)
+
 `Comments` merupakan code smell yang terjadi ketika ada suatu method yang memiliki banyak komentar. Komentar dapat digunakan untuk memperjelas serta proses atau logika yang dijalankan dalam suatu method. Akan tetapi, jika digunakan secara berlebihan, hal ini dapat menyebabkan code menjadi terlihat padat dan sulit dibaca. Untuk mengatasi hal ini, kita dapat memberikan nama yang bersifat `self-explain` (mampu menjelaskan proses atau logika secara mandiri tanpa adanya komentar) pada suatu method atau atribut.
 
 ### Contoh
