@@ -7,7 +7,28 @@
 Berikut adalah contoh dari `Shotgun Surgery` :
 
 ```java
-code
+public class Account {
+       private String type;
+       private int amount;
+
+       public Account(String type, int amount){
+              this.amount=amount;
+              this.type=type;
+       }
+       public void debit(int debit) throws Exception{
+              if(amount <= 500){
+                     throw new Exception("Transaction Failed");
+              }
+              amount = amount-debit;
+              System.out.println("Now amount is" + amount);
+       }
+       public void transfer(Account to,int cerditAmount) throws Exception{
+              if(from.amount <= 500){
+                     throw new Exception("Money Transfer Failed");
+              }
+              to.amount = amount+cerditAmount;
+       }
+}
 ```
 
 Penjelasan
@@ -19,7 +40,31 @@ Penjelasan
 Berikut adalah hasil refactor
 
 ```java
-code
+public class AcountRefactored {
+       private String type;
+       private int amount;
+
+       public AcountRefactored(String type, int amount){
+              this.amount=amount;
+              this.type=type;
+       }
+       private boolean isAccountUnderflow(){
+             return amount<=500;
+       }
+       public void debit(int debit) throws Exception{
+              if(isAccountUnderflow()) {
+                     throw new Exception("Transaction Failed");
+              }
+              amount = amount-debit;
+              System.out.println("Now amount is" + amount);
+       }
+       public void transfer(AcountRefactored from,AcountRefactored to,int cerditAmount) throws Exception{
+              if(isAccountUnderflow()){
+                     throw new Exception("Money Transfer Failed");
+              }
+              to.amount = amount+cerditAmount;
+       }
+}
 ```
 
 [Back to Home Page](https://jonathanchr1.github.io/code-re/)
