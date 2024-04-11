@@ -1,6 +1,6 @@
 # Parallel Inheritance Hierarchies
 
-![shotgun-surgery-01](https://github.com/jonathanchr1/code-re/assets/113973058/cc228ee1-18c3-4fea-8fe1-9a52bad4fbb0)
+![parallel-inheritance-hierarchies-01](https://github.com/jonathanchr1/code-re/assets/113973058/3dbea40f-309f-4479-a7d9-d5d36c9fd0cb)
 
 `Parallel Inheritance Hierarchies` merupakan code smell yang terjadi ketika ada hierarki kelas yang sejajar dan terpisah yang seringkali ditambah/dikembangkan secara bersamaan. Dalam konteks ini, `parallel` merujuk pada hierarki yang sejajar satu sama lain, sementara `inheritance` menunjukkan bahwa hierarki tersebut dibangun melalui pewarisan kelas.
 
