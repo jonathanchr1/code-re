@@ -6,7 +6,7 @@
 
 ### Contoh
 
-Berikut adalah contoh dari `Lazy Class` :
+Berikut adalah contoh dari `Lazy Class`:
 
 ```java
 // Kelas 'Employee'
