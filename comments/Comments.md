@@ -6,7 +6,7 @@
 
 ### Contoh
 
-Berikut adalah contoh dari `Comments` :
+Berikut adalah contoh dari `Comments`:
 
 ```java
 public class kalkulasiUkuran {
