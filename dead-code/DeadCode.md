@@ -1,5 +1,7 @@
 # Dead Code
 
+![dead-code-01](https://github.com/jonathanchr1/code-re/assets/113973058/7175d7d9-97a8-4b9b-bd62-c879ba1b20e6)
+
 `Dead Code` merupakan code smell yang mengacu pada bagian code dalam sebuah program yang sebenarnya tidak digunakan atau diperlukan lagi, tetapi masih tetap ada dalam basis code tersebut. 
 
 ### Contoh
