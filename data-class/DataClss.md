@@ -1,5 +1,7 @@
 # Data Class
 
+![data-class-01](https://github.com/jonathanchr1/code-re/assets/113973058/892a3c06-278b-4337-ab1c-7df730649399)
+
 `Data Class` merupakan code smell yang mengacu pada suatu kelas yang hanya memiliki `atribut/field` dan fungsi `setter & getter`. Kelas-kelas semacam ini biasanya hanya digunakan sebagai wadah untuk data yang digunakan oleh kelas lain dan tidak memiliki fungsionalitas tambahan apa pun serta tidak dapat beroperasi secara independen pada data yang mereka miliki.
 
 ### Contoh
